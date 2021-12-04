@@ -1,0 +1,67 @@
+<header class="header" id="header">
+  <div class="theme-switch">
+    <svg class="theme-switch__icon" role="img" aria-label="Иконка солнца">
+      <use href="./images/sprite.svg#sun"></use>
+    </svg>
+
+    <div class="theme-switch__control">
+      <input
+        class="theme-switch__toggle"
+        type="checkbox"
+        name="theme"
+        id="theme-switch-toggle"
+        aria-label="Переключить между тёмной и светлой темой"
+      />
+      <label aria-hidden="true" class="theme-switch__track" for="theme-switch-toggle"> </label>
+      <div aria-hidden="true" class="theme-switch__marker"></div>
+    </div>
+
+    <svg class="theme-switch__icon" aria-label="Иконка луны">
+      <use href="./images/sprite.svg#moon"></use>
+    </svg>
+  </div>
+  <div class="header-container">
+    <nav class="nav">
+      <div data-home class="nav-logo" id="logo">
+        <a href="./index.html" class="header-logo__icon">
+          <svg class="header-logo__item" width="24px" height="24px">
+            <use class="" href="./images/sprite.svg#icon-logo"></use>
+          </svg>
+          <span class="nav-logo-title">Filmoteka </span>
+        </a>
+      </div>
+      <div class="nav-box">
+        <ul class="nav-list" data-navigation>
+          <li class="nav-list__item">
+            <a href="./index.html" id="home" class="nav-list__link current home" data-home>Home</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" id="library" class="nav-list__link" data-library>my library</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="form-box">
+      <form id="form-search" class="form-search">
+        <div class="formbox" id="form-box">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Поиск фильмов"
+            minlength="2"
+            required
+          />
+          <button class="search-button" type="submit">
+            <svg class="search-icon" width="12px" height="12px">
+              <use class="" href="./images/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="button-box is-hidden" id="button-box">
+          <button type="button" class="library-button active-button" data-watched>Watched</button>
+          <button type="button" class="library-button" data-queue>queue</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</header>

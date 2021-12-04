@@ -1,0 +1,114 @@
+body {
+  font-family: Roboto, sans-serif;
+
+  &.light-theme {
+    background-color: var(--main-background-light-color);
+
+    .film__title {
+      color: var(--main-text-light-color);
+    }
+  }
+
+  &.dark-theme {
+    background-color: grey;
+    .film__title,
+    .button__modal,
+    .movie-info__title,
+    .movie__title, 
+    .movie__overview,
+    .movie__vote-count,
+    .movie__value-num,
+    .movie__value-str-title,
+    .movie__value-str,
+    .team__name {
+      color: var(--main-text-dark-color);
+    }
+    .button__modal.contentDelete {
+      border: 2px solid var(--main-background-vote-color);
+      color: var(--main-background-vote-color);
+            text-shadow: -.1px -.1px 1px rgb(197, 197, 197),
+            .3px .4px 3px black;
+}
+    .movie__properties {
+    color: rgb(194, 194, 194);
+    }  
+    .lightbox__button {
+      fill: var(--main-text-dark-color);
+    }
+    .lightbox__content,
+    .team,
+    .button__modal,
+    .movie__vote-count {
+      background-color: grey;
+    }
+    .button__modal {
+      border-color: var(--main-text-dark-color);
+      &:hover {
+        background-color: var(--main-background-vote-color);
+        color: var(--main-text-dark-color);
+        border: none;
+      }
+    }
+  .button-up,
+  .btn__close{
+    fill: white;
+    &:hover,
+    &:focus {
+      fill: var(--main-text-genre-color);
+      transition: fill var(--animation-duration) cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+    .film__genre {
+      text-shadow: -.2px -.1px .2px #fff,
+        .3px .4px 1px black;
+    }
+
+  }
+}
+
+.section {
+  padding: 0;
+}
+button {
+  cursor: pointer;
+}
+.container {
+  margin: 0 auto;
+  width: 100%;
+  @media screen and (min-width: 320px) {
+    max-width: 320px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and(min-width:1024px) {
+    max-width: 1024px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  padding: 0;
+}

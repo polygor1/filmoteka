@@ -1,0 +1,21 @@
+:root {
+  --main-font: 'Roboto', sans-serif;
+
+  --main-background-light-color: #ffffff;
+  --main-background-dark-color: #1b1b1b;
+  --main-text-light-color: #000000;
+  --main-text-dark-color: #ffffff;
+  --main-text-genre-color: #ff6b08;
+  --main-background-vote-color: #ff6b01;
+  --main-img-background-color: #ffb1d6;
+  --main-img-background-color: #e6a98131;
+  // --main-img-background-color: transparent;
+  --pagination-btn-backgroun: #f7f7f7;
+  --animation-duration: 250ms;
+}
+
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1024px;
+
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);

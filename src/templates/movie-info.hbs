@@ -1,0 +1,35 @@
+<h2 class="movie-info__title">{{title}}</h2>
+<div class="movie-info__general">
+<table class="table-properties">
+  <tbody>
+    <tr>
+      <th class="table__column movie__properties">Vote / Votes</th>
+      <th class="table__column movie__value-num">
+        <span class="movie__vote-average">{{vote_average}}</span>
+        <span class="movie__vote-separator">/</span>
+        <span class="movie__vote-count">{{vote_count}}</span>
+      </th>
+    </tr>
+    <tr class="table__string">
+      <th class="table__column movie__properties">Popularity</th>
+      <th class="table__column movie__value-num">{{popularity}}</th>
+    </tr>
+    <tr class="table__string">
+      <th class="table__column movie__properties">Original Title</th>
+      <th class="table__column movie__value-str-title">{{original_title}}</th>
+    </tr>
+    <tr class="table__string">
+      <th class="table__column movie__properties">Genre</th>
+      <th class="table__column movie__value-str">{{genreShow}}</th>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h3 class="movie__title">About</h3>
+<p class="movie__overview">{{overview}}</p>
+
+<div class="button__section">
+  <button class="button__modal button__watched" type="button" data-value="{{id}}">add to Watched</button>
+  <button class="button__modal button__queue" type="button" data-value="{{id}}">add to queue</button>
+</div>

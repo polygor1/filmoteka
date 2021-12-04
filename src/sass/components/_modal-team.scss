@@ -1,0 +1,137 @@
+  .team {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border-radius: 20px;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      width: 251px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      background-color: var(--main-background-light-color);
+    
+      @media screen and(min-width:$tablet) {
+        width: 600px;
+      }
+    
+      @media screen and(min-width:$desktop) {
+        width: 800px;
+      }
+    }
+    
+    .team__card {
+      margin: 10px;
+      position: relative;
+      text-align: center;
+      flex-basis: calc((100% - 60px) / 2);
+    
+      @media screen and(min-width:$tablet) {
+        flex-basis: calc((100% - 90px) / 4);
+      }
+    
+      @media screen and(min-width:$desktop) {
+        flex-basis: calc((100% - 120px) / 4);
+      }
+    }
+    
+    .img-wrapper {
+      display: flex;
+      justify-content: center;
+      border-radius: 50px;
+    }
+    
+    .team__img {
+      border-radius: 50%;
+      box-shadow: 5px 5px 11px 2px;
+      justify-content: center;
+      align-items: center;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  
+    }
+    
+    .team__in-link {
+      display: flex;
+      position: absolute;
+      bottom: 35px;
+      right: -5px;
+      width: 14px;
+      height: 14px;
+    
+      transition: transform var(--animation-duration) $cubic;
+    
+      &:hover,
+      &:focus {
+        transform: scale(1.5);
+      }
+    
+      @media screen and(min-width:$tablet) {
+        top: 55px;
+        right: 9px;
+        width: 24px;
+        height: 24px;
+      }
+    
+      @media screen and(min-width:$desktop) {
+        top: 58px;
+        right: 30px;
+      }
+    }
+    
+    .team__position {
+      color:  var(--main-text-genre-color);
+    }
+    
+    .team__name,
+    .team__position {
+    margin: 0;
+      font-size: 12px;;
+    
+      @media screen and(min-width:$tablet) {
+        font-size: 18px;
+        font-weight: 500;
+      }
+    
+      @media screen and(min-width:$desktop) {
+        font-size: 24px;
+      }
+    }
+    
+    #footer-backdrop {
+      transition: opacity 500ms $cubic, visibility 500ms $cubic, transform 500ms $cubic;
+      transform: scale(1);
+    }
+    
+    #footer-backdrop.is-hidden {
+      transform: scale(1.1);
+    }
+
+    .btn__close{
+    position: absolute;
+    z-index: 1;
+    top: -270px;
+    right: 2px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+
+      &:hover,
+      &:focus {
+        transform: scale(1.2);
+      }
+      @media screen and(min-width:$tablet) {
+        top: -150px;
+      }
+    
+      @media screen and(min-width:$desktop) {
+        top: -160px;
+        right: 5px;
+      }
+    }

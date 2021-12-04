@@ -1,0 +1,22 @@
+{{#each this}}
+<li class="film__card" data-id="{{id}}">
+  <div class="film__link">
+    {{!-- site for spinner --}}
+    <img src="{{poster_path}}" alt="{{title}}" class="film__img touch-transform" />
+    <div class="film__scribe">
+      <p class="film__title">
+        {{title}}
+      </p>
+      <div class="film__genre">
+        <p>{{genreShow}}</p>
+        <p class="separator">|</p>
+        <p >{{release_year}} </p>
+        <p class="film__vote_average is-hidden">
+          {{vote_average}}
+        </p>
+      </div>
+    </div>
+  </div>
+</li>
+{{/each}}
+

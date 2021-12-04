@@ -1,0 +1,39 @@
+.button-up {
+    position: fixed;
+    z-index: 10;
+    right: 10px;
+    cursor: pointer;
+    fill: black;
+  
+    &:hover,
+    &:focus {
+      fill: var(--main-text-genre-color);
+      transition: fill var(--animation-duration) $cubic;
+    }
+  
+    @media screen and (min-width: $mobile) {
+      bottom: 140px;
+      right: calc(((100vw - 400px) / 2));
+    }
+    @media screen and (min-width: $tablet) {
+      bottom: 130px;
+      right: calc(((100vw - 768px) / 2));
+    }
+    @media screen and (min-width: $desktop) {
+      right: calc(((100vw - 1024px) / 2));
+    }
+  }
+  
+  .button-up__icon {
+    width: 30px;
+    height: 30px;
+  
+    @media screen and (min-width: $tablet) {
+      width: 40px;
+      height: 40px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 45px;
+      height: 45px;
+    }
+}
