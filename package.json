@@ -1,22 +1,22 @@
 {
-  "name": "parcel-project-template",
+  "name": "mu_filmoteka",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://polygor1.github.io/parcel-project-template",
+  "homepage": "https://polygor1.github.io/mu_filmoteka",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /mu_filmoteka/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/polygor1/parcel-project-template.git"
+    "url": "git+https://github.com/polygor1/mu_filmoteka.git"
   },
   "keywords": [],
   "author": "Igor Polyakov <polygor@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/polygor1/parcel-project-template/issues"
+    "url": "https://github.com/polygor1/mu_filmoteka/issues"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
