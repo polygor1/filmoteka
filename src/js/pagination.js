@@ -117,23 +117,25 @@ export default class Paginator {
   }
 
   render() {
+    setTimeout(() => {
+      refs.pageList.innerHTML = '';
+      refs.movieGallery.innerHTML = '';
+      if (this.mode === PAGIN_MODES.TREND) {
+        apiService.setPage(this.currentPage);
+        renderTrending();
+        return;
+      } else if (this.mode === PAGIN_MODES.SEARCH) {
+        apiService.setPage(this.currentPage);
+        renderSearchResults(apiService.query);
+        return;
+      } else if (this.mode === PAGIN_MODES.WATCHED) {
+        renderWatched(this.currentPage);
+        return;
+      } else if (this.mode === PAGIN_MODES.QUEUE) {
+        renderQueue(this.currentPage);
+        return;
+      }
+    }, 250);
     this.scrollPage();
-    setTimeout(()=>{refs.pageList.innerHTML = '';
-    refs.movieGallery.innerHTML = '';
-    if (this.mode === PAGIN_MODES.TREND) {
-      apiService.setPage(this.currentPage);
-      renderTrending();
-      return;
-    } else if (this.mode === PAGIN_MODES.SEARCH) {
-      apiService.setPage(this.currentPage);
-      renderSearchResults(apiService.query);
-      return;
-    } else if (this.mode === PAGIN_MODES.WATCHED) {
-      renderWatched(this.currentPage);
-      return;
-    } else if (this.mode === PAGIN_MODES.QUEUE) {
-      renderQueue(this.currentPage);
-      return;
-    }},500)
   }
 }
