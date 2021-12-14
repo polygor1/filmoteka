@@ -64,7 +64,7 @@
     color: transparent;
     user-select: none;
     background-color: var( --pagination-btn-backgroun);
-    box-shadow: inset -4px 4px 15px rgb(0 0 0 / 40%);
+    box-shadow: inset -4px 4px 15px rgba(0, 0, 0, 40%);
     border-radius: inherit;
     z-index: 1;
     cursor: pointer;
